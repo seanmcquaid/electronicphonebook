@@ -3,16 +3,16 @@ cont = True
 phoneBook = {}
 
 while(cont == True):
-    print "Electric Phone Book"
-    print "===================="
-    print "1. Look up a contact"
-    print "2. Create a new contact"
-    print "3. Delete a contact"
-    print "4. List all contacts"
-    print "5. Quit"
+    print """Electric Phone Book
+====================
+1. Look up a contact
+2. Create a new contact
+3. Delete a contact
+4. List all contacts
+5. Quit"""
     option = raw_input("Which option would you like to do? Choose a number between 1 and 5:  ")
     
-    if (option == 1):
+    if (option == "1"):
         searchContact = raw_input("Whose number are you looking for?  ").upper()
         if (searchContact) in phoneBook.keys():
             print "Their number is " + phoneBook[searchContact]
